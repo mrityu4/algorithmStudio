@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color:cornsilk;
+        }
+        table{
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid black;
+            height: 31px;
+            width: 31px;
+        }
+        .legend{
+            margin-right: 5px;
+        }
+        .square-red {
+            margin-right: 5px;
+            margin-left: 10px;
+
+            margin-top: 18px;
+            height: 20px;
+            width: 20px;
+            background-color:red;
+        }
+        .square-blue {
+            margin-right: 5px;
+            margin-left: 10px;
+            margin-top: 18px;
+            height: 20px;
+            width: 20px;
+            background-color:steelblue;
+        }
+        .source{
+            background-color: brown;
+        }
+        .obstacle{
+            background-color: black;
+        }
+        /* .destination{
+            background-color: black;
+        } */
+        .mar{
+            margin-right: 5px;
+            margin-left: 10px;
+        }
+        .visited{
+            background-color:steelblue ;  
+
+        }
+        .path{
+            background-color:red;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link src="./style.css" type="text/css" rel="stylesheet"></link>
+    <link rel = "stylesheet" href = "/materialize.css">  
+
+
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+
+        <!-- Compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+  <nav class="nav-wrapper indigo">
+<div class="container">
+    <a href="" class="brand-logo">Breadth First Search</a>
+    
+
+   <ul class='right'>
+    <li id='play'><a class="waves-effect waves-light btn"><i class="material-icons left">play_arrow</i>start</a></li>
+
+   </ul>
+
+    <ul class='right'>
+        <li><i  class="square-blue left ">
+        </i></li>
+        <h7>Visited</h7>
+    </ul>
+    <ul></ul>
+    <ul class='right'>
+        <li><i  class="square-red left">
+        </i></li>
+        <h7>Path</h7>
+    </ul>
+   
+    <ul class='right mar'>
+        <li><i class="material-icons tiny left legend">room</i></li>
+
+        <h7>   Destination</h7>
+    </ul>
+    <ul class='right mar'>
+        <li><i class="material-icons tiny left legend">brightness_high</i></li>
+        <h7>   Source</h7>
+    </ul>
+
+</div>
+  </nav>
+<table id="grid" class='border-box'></table>
+
+    <!-- <script src="d3.js" charset="utf-8"></script> -->
+     <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+<!--
+trace path
+animate visited
+animate path
+dfs
+a*
+best-first
+swarm -->

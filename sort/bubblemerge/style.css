@@ -1,0 +1,33 @@
+/* #graph{
+    color: aqua;
+} */
+ .square-red {
+     margin-right: 10px;
+     margin-left: 10px;
+
+     margin-top: 18px;
+     height: 20px;
+     width: 20px;
+     background-color: red;
+ }
+#size-label{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#time-label{
+      margin-right: 10px;
+      margin-top: 20px;
+      margin-left: 40px;
+}
+#two{
+      display: inline-block;
+
+}
+ .square-blue {
+     margin-right: 5px;
+     margin-left: 10px;
+     margin-top: 18px;
+     height: 20px;
+     width: 20px;
+     background-color: lawngreen;
+ }

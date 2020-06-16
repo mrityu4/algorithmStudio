@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/style.css" type="text/css" rel="stylesheet"></link>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <link rel="stylesheet" href="./materialize.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav-wrapper indigo">
+        <div class="container">
+            <a href="" class="brand-logo">Merge Sort</a>
+
+
+
+<ul class='right buton'>
+                <li onclick="popup()"> <a class="waves-effect waves-light btn-small">
+
+                        <i class="material-icons">keyboard</i> </a></li>
+            </ul>
+
+            <ul class='right'>
+                <li id='play' onclick="start()"><a class="waves-effect waves-light btn"><i
+                            class="material-icons left">play_arrow</i>start</a></li>
+                            <!-- <button id="button" onclick="start()">START</button> -->
+            </ul>
+<ul class='right buton'>
+                <li onclick="next()"> <a class="waves-effect waves-light btn-small">
+
+                        <i class="material-icons">navigate_next</i> </a></li>
+            </ul>
+            <ul class='right'>
+               <li> <form action="#">
+                    <p class="range-field">
+                        <input type="range" id="time-range" min="1" max="1000" oninput="timeChange(this.value)" />
+                    </p>
+                </form>
+                </li>
+            </ul>
+              </ul>
+                <ul class='right buton'>
+                <li onclick="prev()"> <a class="waves-effect waves-light btn-small">
+                        <i class="material-icons">navigate_before</i>
+                    </a></li>
+            </ul>
+              <ul class='right mar'>
+                  <!-- <li><i class="material-icons tiny left legend">brightness_high</i></li> -->
+                  <h6 id="time-label"> Time-Line</h6>
+              </ul>
+             <ul class='right'>
+                 <li>
+                     <form action="#">
+                         <p class="range-field">
+                             <input type="range" id="size" min="1" max="50" oninput="sizechange(this.value)"
+                                 oninput="timeChange(this.value)" />
+
+                            </p>
+                     </form>
+                 </li>
+             </ul>
+            <ul class='right'>
+                <!-- <li><i class="square-red left">
+                    </i></li> -->
+                <h6 id='size-label'>Size</h6>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div >
+        <input type="range" min="1" max="1000" value="1" class="slider" id="time" oninput="timeChange(this.value)">
+    </div>
+    <div>
+        <input type="range" min="1" max="50" value="20" class="slider" id="size" oninput="sizechange(this.value)">
+    </div> -->
+<!-- <button id="button" onclick="start()">START</button> -->
+
+   <div id="graph" class="right"></div>
+
+    <script src="d3.js" charset="utf-8"></script>
+     <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
