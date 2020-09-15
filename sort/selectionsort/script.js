@@ -1,6 +1,5 @@
 let w = 3,
   h = 1;
-  svg;
 let delaycounter = 1;
 let index = 0;
 let Data = [];
